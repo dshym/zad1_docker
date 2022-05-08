@@ -23,7 +23,7 @@ namespace zad1.Controllers
         public ActionResult Get()
         {
             var result = new ResultInfo();
-            result.IP = "0.0.0.1";
+            result.IP = Request.HttpContext.Connection.RemoteIpAddress.ToString();
             result.Time = DateTime.Now;
             return Ok(result);
 
