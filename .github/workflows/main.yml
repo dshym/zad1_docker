@@ -40,6 +40,4 @@ jobs:
           push: true
           tags: |
             dshym/lab:v1.0
-          cache-from: type=registry,ref=dshym/lab:v1.0
-          cache-to: type=registry,ref=dshym/lab:v1.0,mode=max
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/arm64/v8
