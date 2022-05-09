@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:5.0.407-bullseye-slim-arm64v8 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 LABEL maintainer="Dmytro Shymanskyi <dmytro.shymanskyi@pollub.edu.pl>"
 WORKDIR /app
 EXPOSE 80
